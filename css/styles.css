@@ -1,0 +1,77 @@
+/* Apply to all html body */
+body {
+    /* font-size does not apply to company name (h1). h1 font-size is defined by type.less:48 */
+    font-size: 16px;
+    color: aliceblue;
+    background-color: teal;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/************************************************** Style header ********************************************/
+/* The outest wrapper */
+#header-nav {
+    background-color: bisque;
+    /* class:navbar navbar-default defined border but we don't want it */
+    border-radius: 0;
+    border: 0;
+}
+
+/* .navbar-header wraps company name and the Menu button */
+.navbar-header {
+    /* Make the header space bigger so that the company name stays within */
+    padding-bottom: 30px;
+    position: relative;
+}
+
+/* Style company name */
+.navbar-brand h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: darkcyan;
+    font-size: 1.8em;
+}
+
+.navbar-brand a:hover {
+    text-decoration: none;
+}
+
+/* Style the menu button (3 horizontal bars) position */
+.navbar-header button.navbar-toggle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.navbar-header button.navbar-toggle,
+.navbar-header .icon-bar {
+    /* Style the Menu button (3 horizontal bars) border */
+    border: 1px solid darkcyan;
+}
+
+/* Style the navigation lists (collapsed nav menu) */
+#collapsable-nav>#nav-list>li {
+    border-bottom: 1px solid darkcyan;
+    width: 100%;
+    background-color: darkseagreen;
+    text-align: center;
+    font-size: large;
+}
+
+/************************************************** Style header ********************************************/
+/* Leave some more space under "Our Menu" */
+#our-menu {
+    margin: 20px;
+}
+
+
+/* Style background */
+#menu-content {
+    background-color: cadetblue;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 20px;
+}
+
+/* Style menu-item-name */
+#menu-item-name {
+    text-align: center;
+    font-size: large;
+}
